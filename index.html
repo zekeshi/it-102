@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeke | Portfolio</title>
+    <style>
+        /* CSS Reset & Variables */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --accent-color: #38bdf8;
+            --text-secondary: #94a3b8;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid #334155;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        /* Personal Info / Hero */
+        .hero {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Social Links */
+        .links-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-link {
+            background-color: var(--card-bg);
+            color: var(--accent-color);
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid #334155;
+            transition: all 0.3s ease;
+        }
+
+        .btn-link:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+        }
+
+        /* Education & Projects Cards */
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid #334155;
+        }
+
+        .card h3 {
+            margin-bottom: 0.25rem;
+            font-size: 1.2rem;
+        }
+
+        .card .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+
+        /* Skills Tags */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .skill-tag {
+            background-color: var(--card-bg);
+            border: 1px solid #334155;
+            color: var(--text-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            body { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- 1. Personal Info -->
+        <header class="hero">
+            <h1>Zeke</h1>
+            <p>Aspiring Software Engineer, Web Developer, & Cyber Security Analyst</p>
+            
+            <!-- 5. Links (GitHub, LinkedIn, Email) -->
+            <div class="links-container">
+                <a href="https://github.com/zekeshi" target="_blank" class="btn-link">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="btn-link">LinkedIn</a>
+                <a href="mailto:ezekielle.zarriz@students.isatu.edu.ph" class="btn-link">Email Me</a>
+            </div>
+        </header>
+
+        <!-- 2. Educational Background -->
+        <section id="education">
+            <h2>Educational Background</h2>
+            
+            <div class="card">
+                <h3>Bachelor of Science in Information Technology</h3>
+                <div class="subtitle">Iloilo Science and Technology University | 2024 – 2028</div>
+                <p>Relevant Coursework: Data Structures & Algorithms, Web Development, Software Engineering, Database Systems.</p>
+            </div>
+        </section>
+
+        <!-- 3. Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">HTML5 / CSS3</span>
+                <span class="skill-tag">JavaScript (ES6+)</span>
+                <span class="skill-tag">React.js</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Git / GitHub</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Responsive Design</span>
+                <span class="skill-tag">Web Designer</span>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
